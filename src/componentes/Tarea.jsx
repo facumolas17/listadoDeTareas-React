@@ -1,9 +1,9 @@
 import React from 'react';
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
-const Tarea = ({ texto  }) => {
+const Tarea = ({ texto , completada }) => {
   return (
-    <div className='tarea-contenedor'>
+    <div className={completada ? 'tarea-contenedor completada' : 'tarea-contenedor' }>
         <div className='tarea-texto'>
             {texto}
         </div>
