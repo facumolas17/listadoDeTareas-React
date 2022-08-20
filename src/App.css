@@ -57,12 +57,6 @@
   color:white;
 }
 
-.tarea-contenedor.completada{
-  background-color: #5a01a7;
-  text-decoration: line-through;
-
-}
-
 .tarea-formulario{
   display: flex;
   flex-wrap: wrap;
@@ -112,6 +106,12 @@
   background-color: #2a2a40;
 }
 
-.tarea-contenedor.tarea-contenedor:nth-child(3n + 3){
+.tarea-contenedor:nth-child(3n + 3){
   background-color: #3b3b4f;
+}
+
+.tarea-contenedor.completada{
+  background-color: rgba(11, 196, 234, 0.84);
+  text-decoration: line-through;
+
 }
